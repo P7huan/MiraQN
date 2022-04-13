@@ -1686,7 +1686,52 @@ element.style {
   border-radius: 5px;
   margin-right: 27px;
 }
-
+.panel-title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.table > :not(caption) > * > * {
+  background-color: #e8c04e;
+}
+.form-group input,
+option,
+.menu-gioitinh select {
+  width: 100%;
+  padding: 6px;
+}
+.form-group label {
+  margin: 16px 0 10px;
+  font-size: 16px;
+  color: #bf882e;
+}
+.textarea-yeucau textarea {
+  height: 210px;
+}
+.wpcf7-submit {
+  padding: 12px 20px !important;
+  display: block;
+  margin: 20px auto;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #bf882e !important;
+  color: #fff !important;
+}
+.form-group span {
+  color: red;
+  margin-left: 2px;
+}
+.elementor-2280 .elementor-element.elementor-element-1cdd16d {
+  margin-bottom: 10px;
+}
+.elementor-button-content-wrapper SPAN {
+  color: #fff !important;
+}
+#categories-3 .widget-title {
+  color: #bf882e;
+  font-family: 'Roboto', Sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
 @media screen and (min-width: 1400px) {
   .elementor-container {
     /*max-width: 1320px;*/
@@ -1700,61 +1745,3 @@ element.style {
 /*@media screen and (min-width: 1400px){
 
 }*/
-
-.single-post .post-thumbnail,
-.archive.category .site-header .post-thumbnail {
-  display: none;
-}
-.single-post .site-content,
-.archive.category .site-content {
-  margin-top: 55px;
-}
-.post .entry-title a {
-  font-size: 18px;
-  text-decoration: none;
-  color: #e8c04e;
-  font-weight: 500;
-}
-.post .entry-meta {
-  display: none;
-}
-.post .entry-content {
-  margin-top: 15px;
-}
-#shiftnav-toggle-main.shiftnav-toggle-edge-right .shiftnav-toggle-burger {
-  background: transparent !important;
-}
-.page-id-957 .post-thumbnail {
-  display: none;
-}
-.sidebar__news-heading {
-  margin-bottom: 20px;
-}
-.sidebar__news-list {
-  padding: 0;
-  list-style: none;
-}
-.sidebar__news-list--item {
-  margin-bottom: 16px;
-  transition: all 0.5s ease-in-out;
-}
-.sidebar__news-list--item:hover {
-  transform: translateX(3px);
-}
-.sidebar__news-item--link {
-  display: flex;
-  align-items: flex-start;
-}
-.sidebar__news-item--img {
-  object-fit: cover;
-  min-height: 80px;
-  width: 80px;
-  margin-right: 10px;
-}
-.sidebar__news-item--title {
-  font-size: 14px !important;
-  color: #e8c04e !important;
-}
-.sidebar__category-heading {
-  margin: 20px 0;
-}
