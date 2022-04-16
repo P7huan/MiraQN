@@ -69,6 +69,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  font-family: 'Cormorant', Sans-serif !important;
 }
 
 /* Sections
@@ -1012,6 +1013,9 @@ ul#primary-menu li {
 ul#primary-menu > li {
   padding: 27px 0;
   margin-right: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Cormorant', Sans-serif !important;
 }
 
 ul#primary-menu li .sub-menu {
@@ -1074,17 +1078,18 @@ footer#page-footer {
   color: #e8c04e;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: roboto;
+  font-family: 'Cormorant', Sans-serif !important;
   margin-bottom: 10px;
 }
 
 #page-footer .menu a {
-  color: #b7b7b7;
+  color: #fff;
   text-decoration: none;
   font-size: 15px;
   margin-bottom: 10px;
   display: block;
   text-transform: capitalize;
+  font-family: 'Cormorant', Sans-serif !important;
 }
 #page-footer ul {
   margin: 0px;
@@ -1097,6 +1102,7 @@ footer#page-footer {
 /*#page-footer */
 .site-info {
   border-top: 1px solid;
+  font-family: 'Cormorant', Sans-serif !important;
 }
 .site-info,
 .site-info a {
@@ -1105,16 +1111,20 @@ footer#page-footer {
   font-size: 14px;
   margin-top: 10px;
   text-align: center;
-  color: #b7b7b7;
+  color: #fff;
   text-decoration: none;
 }
 
 .textwidget {
-  color: #b7b7b7;
+  color: #fff;
+  font-family: 'Cormorant', Sans-serif !important;
 }
-
+.textwidget h6 {
+  font-size: 20px;
+}
 .textwidget ul li {
   list-style: none;
+  font-family: 'Cormorant', Sans-serif !important;
 }
 a.open-location,
 a.open-booking {
@@ -1130,7 +1140,7 @@ div#secondary {
   line-height: 20px;
   margin-bottom: 10px;
   color: #e8c04e;
-  font-family: 'Minion Regular';
+  font-family: 'Cormorant', Sans-serif !important;
   font-size: 26px;
   font-style: italic;
   float: left;
@@ -1140,6 +1150,7 @@ div#secondary {
   padding-top: 35px;
   overflow: hidden;
   width: 100%;
+  font-family: 'Cormorant', Sans-serif !important;
 }
 .partial-share {
   float: right;
@@ -1168,9 +1179,12 @@ h6 {
 
 h1.entry-title {
   margin-bottom: 20px;
-  font-family: 'Minion Regular';
+  font-family: 'Cormorant', Sans-serif !important;
   text-transform: uppercase;
   font-size: 35px;
+}
+.home {
+  margin-bottom: 0 !important;
 }
 .home header.entry-header {
   display: none;
@@ -1242,9 +1256,11 @@ img {
 .list-post-type .list-post-type-item a.title {
   color: #766b58;
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
-  font-family: 'Minion It';
+  font-family: 'Cormorant', Sans-serif !important;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .list-post-type .list-post-type-item a.title:hover {
@@ -1529,7 +1545,7 @@ body a.btn,
   font-size: 45px;
   text-align: center;
   color: #fff;
-  font-family: 'Minion Regular';
+  font-family: 'Cormorant', Sans-serif !important;
   text-transform: uppercase;
 }
 
@@ -1589,27 +1605,37 @@ body.archive.tax-taxanomy-room .img-rom-arche img {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 30px !important;
   position: relative;
+  overflow: hidden;
 }
 
 .list-post-type .list-post-type-item .list-post-type-image img {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  transition: all 0.5s ease-in-out;
 }
 
 .list-room-cat-title {
   padding: 15px;
   min-height: 102px;
 }
-
+.list-room-cat-title .excerpt {
+  font-family: 'Cormorant', Sans-serif !important;
+}
 .list-room-cat-title a.title {
   color: #766b58;
   display: block;
   font-size: 18px;
   text-decoration: none;
-  /*font-family: 'Minion It';*/
+  font-weight: 700;
+  color: #e8c04e;
 }
-
+.list-post-type-image {
+  overflow: hidden;
+}
+.list-post-type .list-post-type-item:hover .list-post-type-image img {
+  transform: scale(120%);
+}
 .list-post-type .list-post-type-item a.title:hover {
   color: #e8c04e;
 }
@@ -1618,15 +1644,29 @@ body.archive.tax-taxanomy-room .img-rom-arche img {
   padding-top: 10px;
   overflow: hidden;
   line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
 }
 .list-post-type .list-post-type-item a.more {
-  margin-top: 15px;
-  display: block;
+  margin-top: 13px;
+  display: inline-block;
   text-decoration: none;
   color: #e8c04e;
-  /*color: #e8c04e;*/
+  font-family: 'Cormorant', Sans-serif !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #e8c04e;
+  padding: 4px 20px;
+  transition: all 0.3s ease-in-out;
 }
-
+.list-price {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+.list-post-type .list-post-type-item a.more:hover {
+  background-color: #e8c04e;
+  color: #fff;
+}
 .site-footer a {
   color: #e8c04e;
   text-decoration: none;
@@ -1695,6 +1735,7 @@ element.style {
 }
 .form-group input,
 option,
+textarea,
 .menu-gioitinh select {
   width: 100%;
   padding: 6px;
@@ -1728,10 +1769,43 @@ option,
 }
 #categories-3 .widget-title {
   color: #bf882e;
-  font-family: 'Roboto', Sans-serif;
+  font-family: 'Cormorant', Sans-serif !important;
   font-size: 22px;
   font-weight: 600;
 }
+.elementor-89 .elementor-element.elementor-element-29d49e2 .elementor-post__card .elementor-post__badge {
+  background-color: #ff9e00;
+  font-family: 'Cormorant', Sans-serif !important;
+}
+.home__news .elementor-post__read-more {
+  border: 1px solid #ff9e00;
+  padding: 8px 16px;
+}
+.elementor-89 .elementor-element.elementor-element-b908bbf .elementor-tab-title.elementor-active,
+.elementor-89 .elementor-element.elementor-element-b908bbf .elementor-tab-title.elementor-active a {
+  font-family: 'Cormorant', Sans-serif !important;
+  font-weight: 800 !important;
+}
+.elementor-89 .elementor-element.elementor-element-b908bbf .elementor-tab-title {
+  font-family: 'Cormorant', Sans-serif !important;
+  font-weight: 800 !important;
+}
+.elementor-form-fields-wrapper input,
+select,
+option {
+  font-family: 'Cormorant', Sans-serif !important;
+  font-weight: 500;
+}
+.elementor-button {
+  font-family: 'Cormorant', Sans-serif !important;
+  font-weight: 700;
+}
+.list-room-cat-title a.more {
+  font-family: 'Cormorant', Sans-serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 1400px) {
   .elementor-container {
     /*max-width: 1320px;*/
